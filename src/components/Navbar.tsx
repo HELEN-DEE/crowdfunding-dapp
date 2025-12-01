@@ -70,7 +70,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`sticky top-0 z-50 ${
+    <nav className={`sticky top-0  ${
       isDark ? 'bg-black border-gray-800' : 'bg-white border-gray-200'
     } border-b transition-colors duration-200`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
