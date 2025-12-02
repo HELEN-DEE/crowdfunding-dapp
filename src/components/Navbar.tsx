@@ -32,10 +32,11 @@
 import React, { useState } from 'react';
 import { Coins, Sun, Moon, Wallet } from 'lucide-react';
 import { useTheme } from './ThemeContext';
+import { MetaMaskInpageProvider } from "@metamask/providers";
 
 declare global {
   interface Window {
-    ethereum?: number;
+    ethereum?: MetaMaskInpageProvider;
   }
 }
 
@@ -56,18 +57,26 @@ export default function Navbar() {
   };
 
   const connectWallet = async () => {
-    if (typeof window.ethereum !== 'undefined') {
-      try {
-        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+  if (typeof window !== "undefined" && window.ethereum) {
+    try {
+      const accounts = await window.ethereum.request({
+        method: "eth_requestAccounts",
+      });
+
+      if (Array.isArray(accounts)) {
         setAddress(accounts[0]);
         setIsConnected(true);
-      } catch (error) {
-        console.error('Wallet connection failed:', error);
       }
-    } else {
-      alert('Please install MetaMask!');
-    }
-  };
+    } catch (error: unknown) {
+  console.error("Wallet connection failed:", error);
+}
+
+  } else {
+    alert("Please install MetaMask");
+  }
+};
+
+
 
   return (
     <nav className={`sticky top-0  ${
