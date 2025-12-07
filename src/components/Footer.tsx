@@ -1,7 +1,8 @@
 "use client";
 import React from 'react';
-import { Twitter, Github, MessageCircle, FileText, HelpCircle, Rocket, Shield, Globe, ExternalLink } from 'lucide-react';
-// import { FaDiscord, FaTelegram } from 'react-icons/fa';
+import { MessageCircle, FileText, HelpCircle, Rocket, Shield, Globe, ExternalLink } from 'lucide-react';
+import { FaXTwitter } from "react-icons/fa6";
+import {FaDiscord, FaTelegram } from 'react-icons/fa';
 import { useTheme } from './ThemeContext';
 
 const Footer = () => {
@@ -29,10 +30,9 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Twitter, href: 'https://twitter.com/crowdmint', label: 'Twitter' },
-    { icon: Github, href: 'https://github.com/crowdmint', label: 'GitHub' },
-    // { icon: FaDiscord, href: 'https://discord.gg/crowdmint', label: 'Discord', isReactIcon: true },
-    // { icon: FaTelegram, href: 'https://t.me/crowdmint', label: 'Telegram', isReactIcon: true },
+    { icon: FaXTwitter, href: 'https://twitter.com/crowdmint', label: 'Twitter' },
+    { icon: FaDiscord, href: 'https://discord.gg/crowdmint', label: 'Discord', isReactIcon: true },
+    { icon: FaTelegram, href: 'https://t.me/crowdmint', label: 'Telegram', isReactIcon: true },
   ];
 
   const supportedNetworks = [
