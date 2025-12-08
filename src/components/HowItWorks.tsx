@@ -5,31 +5,31 @@ import { useTheme } from './ThemeContext';
 
 
 const steps = [
-    {
-      number: "01",
-      icon: Rocket,
-      title: "Create Your Campaign",
-      description: "Set your funding goal, deadline, and tell your story. Deploy your campaign to the blockchain in minutes."
-    },
-    {
-      number: "02",
-      icon: DollarSign,
-      title: "Receive Contributions",
-      description: "Backers support your project with cryptocurrency. All transactions are transparent and recorded on-chain."
-    },
-    {
-      number: "03",
-      icon: Target,
-      title: "Reach Your Goal",
-      description: "Once you hit your funding goal by the deadline, withdraw the funds and bring your vision to life."
-    },
-    {
-      number: "04",
-      icon: CheckCircle,
-      title: "Deliver Results",
-      description: "Use the funds to execute your project. If goals aren't met, backers automatically receive refunds."
-    }
-  ];
+        {
+        number: "01",
+        icon: Rocket,
+        title: "Create Your Campaign",
+        description: "Set your funding goal, deadline, and tell your story. Deploy your campaign to the blockchain in minutes."
+        },
+        {
+        number: "02",
+        icon: DollarSign,
+        title: "Receive Contributions",
+        description: "Backers support your project with cryptocurrency. All transactions are transparent and recorded on-chain."
+        },
+        {
+        number: "03",
+        icon: Target,
+        title: "Reach Your Goal",
+        description: "Once you hit your funding goal by the deadline, withdraw the funds and bring your vision to life."
+        },
+        {
+        number: "04",
+        icon: CheckCircle,
+        title: "Deliver Results",
+        description: "Use the funds to execute your project. If you don't reach your goal, all contributions are refunded to backers."
+        }
+    ];
 
 export default function HowItWorks() {
     const { isDark } = useTheme();

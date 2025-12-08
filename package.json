@@ -11,7 +11,7 @@
   "dependencies": {
     "@metamask/providers": "^22.1.1",
     "lucide-react": "^0.555.0",
-    "next": "16.0.5",
+    "next": "^16.0.8",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-icons": "^5.5.0"

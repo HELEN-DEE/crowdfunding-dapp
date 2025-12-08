@@ -1,33 +1,4 @@
-// import React from 'react'
 
-// const navLinks = [
-//     { name: 'Home', path: '/' },
-//     { name: 'Create Campaign', path: '/create-campaign' },
-//     { name: 'My Campaigns', path: '/my-campaigns' },
-//     { name: 'Profile', path: '/profile' },
-// ];
-
-// const Navbar = () => {
-//   return (
-//     <section className='flex items-center justify-between py-4 px-12'>
-//         <h1 className='text-4xl'>
-//             CrowdMint
-//         </h1>
-//         <nav>
-//             <ul className='flex gap-3'>
-//                 {navLinks.map((link) => (
-//                     <li key={link.name}>
-//                         <a href={link.path}>{link.name}</a>
-//                     </li>
-//                 ))}
-//             </ul>
-//         </nav>
-
-//     </section>
-//   )
-// }
-
-// export default Navbar
 "use client";
 import React, { useState } from 'react';
 import { Coins, Sun, Moon, Wallet } from 'lucide-react';
@@ -42,9 +13,9 @@ declare global {
 
 const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'Create Campaign', path: '/create-campaign' },
-  { name: 'My Campaigns', path: '/my-campaigns' },
-  { name: 'Profile', path: '/profile' },
+  { name: 'Create', path: '/create-campaign' },
+  { name: 'Explore', path: '/explore' },
+  { name: 'Dashboard', path: '/dashboard' },
 ];
 
 export default function Navbar() {
