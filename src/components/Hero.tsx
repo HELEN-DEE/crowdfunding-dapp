@@ -11,7 +11,7 @@ export default function Hero() {
     <section className={`${
       isDark ? 'bg-black' : 'bg-white'
     } h-[90vh] flex items-center justify-center overflow-hidden transition-colors duration-200`}>
-      <div className='  '>
+      <div className='  px-4 sm:px-6 lg:px-8 '>
         <div className='text-center'>
           <h1 className={`text-5xl md:text-7xl font-bold mb-6 text-center  ${
             isDark ? 'text-white' : 'text-black'

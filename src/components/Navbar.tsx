@@ -17,7 +17,7 @@ interface Window {
 const navLinks: NavLink[] = [
   { name: 'Home', path: '/' },
   { name: 'Create', path: '/create-campaign' },
-  { name: 'Explore', path: '/explore' },
+  { name: 'Explore', path: '/explore-campaign' },
   { name: 'Dashboard', path: '/dashboard' },
 ];
 
